@@ -12,3 +12,7 @@ export function fibonacciV1(number: number): number {
 
   return fibonacciSecuence[number];
 }
+
+export function fibonacciV2(number: number): number {
+  return 0;
+}

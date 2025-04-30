@@ -1,4 +1,4 @@
-import { fibonacciV1 } from '../core/fibonacci';
+import { fibonacciV1, fibonacciV2 } from '../core/fibonacci';
 
 describe('Fibonacci version 1 should', () => {
   it('return 0 for case 0 ', () => {
@@ -21,5 +21,11 @@ describe('Fibonacci version 1 should', () => {
   });
   it('return 8 for case 6 ', () => {
     expect(fibonacciV1(6)).toBe(8);
+  });
+});
+
+describe('Fibonacci version 2 should', () => {
+  it('return 0 for case 0 ', () => {
+    expect(fibonacciV2(0)).toBe(0);
   });
 });
