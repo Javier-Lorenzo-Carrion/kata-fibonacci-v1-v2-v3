@@ -28,4 +28,7 @@ describe('Fibonacci version 2 should', () => {
   it('return 0 for case 0 ', () => {
     expect(fibonacciV2(0)).toBe(0);
   });
+  it('return 1 for case 1 ', () => {
+    expect(fibonacciV2(1)).toBe(1);
+  });
 });

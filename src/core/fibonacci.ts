@@ -14,5 +14,5 @@ export function fibonacciV1(number: number): number {
 }
 
 export function fibonacciV2(number: number): number {
-  return 0;
+  return number;
 }
