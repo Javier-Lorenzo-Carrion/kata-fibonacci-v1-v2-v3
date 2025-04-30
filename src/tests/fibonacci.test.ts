@@ -10,4 +10,7 @@ describe('Fibonacci version 1 should', () => {
   it('return 1 for case 2 ', () => {
     expect(fibonacciV1(2)).toBe(1);
   });
+  it('return 1 for case 3 ', () => {
+    expect(fibonacciV1(3)).toBe(2);
+  });
 });
