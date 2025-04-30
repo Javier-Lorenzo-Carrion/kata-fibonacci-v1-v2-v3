@@ -40,4 +40,7 @@ describe('Fibonacci version 2 should', () => {
   it('return 3 for case 4 ', () => {
     expect(fibonacciV2(4)).toBe(3);
   });
+  it('return 5 for case 5 ', () => {
+    expect(fibonacciV2(5)).toBe(5);
+  });
 });
