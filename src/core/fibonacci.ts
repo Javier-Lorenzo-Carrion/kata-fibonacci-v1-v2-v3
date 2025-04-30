@@ -1,8 +1,14 @@
 export function fibonacciV1(number: number): number {
+
   if (number <= 1) return number;
-  const fibonaccNumberUntilnumber: number[] = [0, 1];
-  for (let i: number = 2; i <= number; ++i) {
-    fibonaccNumberUntilnumber.push(fibonaccNumberUntilnumber[i - 1] + fibonaccNumberUntilnumber[i - 2]);
+  const fibonacciSecuence: number[] = new Array(number);
+
+  fibonacciSecuence[0] = 0;
+  fibonacciSecuence[1] = 1;
+
+  for (let index: number = 2; index <= number; ++index) {
+    fibonacciSecuence[index] = fibonacciSecuence[index - 1] + fibonacciSecuence[index - 2];
   }
-  return fibonaccNumberUntilnumber[number];
+
+  return fibonacciSecuence[number];
 }
