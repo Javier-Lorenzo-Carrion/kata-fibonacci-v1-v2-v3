@@ -1,3 +1,3 @@
 export function fibonacciV1(number: number): number {
-  return 0;
+  if(number <= 1) return number;
 }
