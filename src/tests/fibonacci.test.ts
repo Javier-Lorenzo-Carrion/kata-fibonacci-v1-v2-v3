@@ -19,4 +19,7 @@ describe('Fibonacci version 1 should', () => {
   it('return 5 for case 5 ', () => {
     expect(fibonacciV1(5)).toBe(5);
   });
+  it('return 8 for case 6 ', () => {
+    expect(fibonacciV1(6)).toBe(8);
+  });
 });
