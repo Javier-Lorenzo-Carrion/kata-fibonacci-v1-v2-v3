@@ -1,5 +1,4 @@
 export function fibonacciV1(number: number): number {
-
   if (number <= 1) return number;
   const fibonacciSecuence: number[] = new Array(number);
 
@@ -19,5 +18,10 @@ export function fibonacciV2(number: number): number {
 }
 
 export function fibonacciV3(number: number) {
-  return number;
+  const fibonacciSequence: number[] = [0, 1];
+  while (fibonacciSequence.length <= number) {
+    const sumatoryOfTwoPreviousValues: number = fibonacciSequence[fibonacciSequence.length - 1] + fibonacciSequence[fibonacciSequence.length - 2];
+    fibonacciSequence.push(sumatoryOfTwoPreviousValues);
+  }
+  return fibonacciSequence[number];
 }
