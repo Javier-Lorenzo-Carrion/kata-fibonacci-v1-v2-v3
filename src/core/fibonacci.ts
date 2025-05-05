@@ -18,10 +18,13 @@ export function fibonacciV2(number: number): number {
 }
 
 export function fibonacciV3(number: number) {
-  const fibonacciSequence: number[] = [0, 1];
+  const firstFixedValue: number = 0;
+  const secondFixedValue: number = 1;
+  const fibonacciSequence: number[] = [firstFixedValue, secondFixedValue];
   while (fibonacciSequence.length <= number) {
     const sumatoryOfTwoPreviousValues: number = fibonacciSequence[fibonacciSequence.length - 1] + fibonacciSequence[fibonacciSequence.length - 2];
-    fibonacciSequence.push(sumatoryOfTwoPreviousValues);
+    const currentValue: number = sumatoryOfTwoPreviousValues;
+    fibonacciSequence.push(currentValue);
   }
   return fibonacciSequence[number];
 }
